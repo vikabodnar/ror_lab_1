@@ -1,10 +1,13 @@
-<%= form_for :user, url:loginresult_path do |f| %>
-<p><%=f.label :email %> </p>
-<%= f.text_field :email %><br/>
-<p><%=f.label :password %> </p>
-<%= f.text_field :password %><br/>
+<%= form_for :user, url:loginresult_path  do |f| %>
+<body style="background-color: pink;">
+<h1 style="text-align: center;">Please, enter your details</h1>
+<p style="text-align: center;"><%=f.label :email %> </p>
+<p style="text-align: center;"><%= f.text_field :email %></p>
+<p style="text-align: center;"><%=f.label :password %> </p>
+<p style="text-align: center;"><%= f.text_field :password %></p>
 
-<%= f.submit "login" %>
+<p style="text-align: center;"><%= f.submit "login" %></p>
+</body>
 <% end %>
 
 

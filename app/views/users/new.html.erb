@@ -7,35 +7,32 @@
    <li><%= msg %></li>
     <%  end %>
   <% end %>
-<p><%=f.label "Firstname"%> </p>
-<%= f.text_field :firstname %><br/>
-<p><%=f.label "Lastname"%> </p>
-<%= f.text_field :lastname %><br/>
-<p><%=f.label :email %> </p>
-<%= f.text_field :email %><br/>
-<p><%=f.label :password %> </p>
-<%= f.password_field :password %><br/>
-<p><%=f.label :avatar %> </p>
-<%= f.file_field :avatar %>
-<p><%=f.label :age %> </p>
-<%= f.text_field :age %>
-<p><%=f.label :gender %> </p>
- <%= f.select :gender,['male','female'] %>
-<p><%=f.label :country %> </p>
-<%= f.text_field :country %>
-<p><%=f.label :city %> </p>
-<%= f.text_field :city %>
-<p><%=f.label :street %> </p>
-<%= f.text_field :street %>
-<p><%=f.label :phone %> </p>
-<%= f.text_field :phone %><br/>
+<body style="background-color: pink;">
+<h1 style="text-align: center;">Please, sign up for your profile</h1>
+<p style="text-align: center;"><%=f.label "Firstname"%></p>
+<p style="text-align: center;"><%= f.text_field :firstname %></p>
+<p style="text-align: center;"><%=f.label "Lastname"%></p>
+<p style="text-align: center;"><%= f.text_field :lastname %></p>
+<p style="text-align: center;"><%=f.label :email %> </p>
+<p style="text-align: center;"><%= f.text_field :email %></p>
+<p style="text-align: center;"><%=f.label :password %> </p>
+<p style="text-align: center;"><%= f.password_field :password %></p>
+<p style="text-align: center;"><%=f.label :avatar %> </p>
+<p style="text-align: center;"><%= f.file_field :avatar %></p>
+<p style="text-align: center;"><%=f.label :age %> </p>
+<p style="text-align: center;"><%= f.text_field :age %></p>
+<p style="text-align: center;"><%=f.label :gender %> </p>
+<p style="text-align: center;"><%= f.select :gender,['male','female'] %></p>
+<p style="text-align: center;"><%=f.label :country %> </p>
+<p style="text-align: center;"><%= f.text_field :country %></p>
+<p style="text-align: center;"><%=f.label :city %> </p>
+<p style="text-align: center;"><%= f.text_field :city %></p>
+<p style="text-align: center;"><%=f.label :street %> </p>
+<p style="text-align: center;"><%= f.text_field :street %></p>
+<p style="text-align: center;"><%=f.label :phone %> </p>
+<p style="text-align: center;"><%= f.text_field :phone %></p>
 
 
-
-
-
-
-
-
-<%= f.submit "save" %>
+<p style="text-align: center;"><%= f.submit "save" %></p>
+</body>
 <% end %>

@@ -1,14 +1,15 @@
-<h1><%= link_to "Index", root_path %></h1>
-<%= image_tag @user.avatar.url(:medium) %><br/>
-Firstname : <%= @user.firstname %><br/>
-Lastname : <%= @user.lastname %><br/>
-Password : <%= @user.password %><br/>
-Avatar : <%= @user.avatar %><br/>
-Age : <%= @user.age %><br/>
-Gender : <%= @user.gender %><br/>
-Country : <%= @user.country %><br/>
-City : <%= @user.city %><br/>
-Street : <%= @user.street %><br/>
-Phone : <%= @user.phone %><br/>
-<%= link_to "Edit", edit_user_path %>
-<%= link_to "Exit", user_path(@user.id), method: :delete %>
+<body bgcolor="pink">
+<h1 style="text-align: center;"><%= link_to "Welcome! It`s your profile:)", root_path %></h1>
+<p style="text-align: center;"><%= image_tag @user.avatar.url(:medium) %></p>
+<p style="text-align: center;">Your firstname : <%= @user.firstname %></p>
+<p style="text-align: center;">Your lastname : <%= @user.lastname %></p>
+<p style="text-align: center;">Your password : <%= @user.password %></p>
+<p style="text-align: center;">You are  <%= @user.age %> years old </p>
+<p style="text-align: center;">Your gender : <%= @user.gender %></p>
+<p style="text-align: center;">Your country : <%= @user.country %></p>
+<p style="text-align: center;">You live in  <%= @user.city %> city </p>
+<p style="text-align: center;">Your street: <%= @user.street %></p>
+<p style="text-align: center;">Your phone number: <%= @user.phone %></p>
+<p style="text-align: center;"><%= link_to "Edit | ", edit_user_path %>
+<%= link_to "Exit", user_path(@user.id), method: :delete %></p>
+</body>
