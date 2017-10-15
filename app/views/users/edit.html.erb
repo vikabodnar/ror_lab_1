@@ -10,6 +10,20 @@
 
 <p><%=f.label :avatar %> </p>
 <%= f.file_field :avatar %>
+<p><%=f.label :age %> </p>
+<%= f.text_field :age %>
+<p><%=f.label :gender %> </p>
+ <%= f.select :gender,['male','female'] %>
+<p><%=f.label :country %> </p>
+<%= f.text_field :country %>
+<p><%=f.label :city %> </p>
+<%= f.text_field :city %>
+<p><%=f.label :street %> </p>
+<%= f.text_field :street %>
+<p><%=f.label :phone %> </p>
+<%= f.text_field :phone %><br/>
+
+
 
 <%= f.submit "save" %>
 

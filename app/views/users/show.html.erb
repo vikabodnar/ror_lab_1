@@ -1,6 +1,14 @@
 <h1><%= link_to "Index", root_path %></h1>
-<%= image_tag @user.avatar.url(:medium) %>
+<%= image_tag @user.avatar.url(:medium) %><br/>
 Firstname : <%= @user.firstname %><br/>
-Lastname : <%= @user.lastname %>
+Lastname : <%= @user.lastname %><br/>
+Password : <%= @user.password %><br/>
+Avatar : <%= @user.avatar %><br/>
+Age : <%= @user.age %><br/>
+Gender : <%= @user.gender %><br/>
+Country : <%= @user.country %><br/>
+City : <%= @user.city %><br/>
+Street : <%= @user.street %><br/>
+Phone : <%= @user.phone %><br/>
 <%= link_to "Edit", edit_user_path %>
 <%= link_to "Exit", user_path(@user.id), method: :delete %>

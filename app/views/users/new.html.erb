@@ -7,9 +7,28 @@
 <p><%=f.label :email %> </p>
 <%= f.text_field :email %><br/>
 <p><%=f.label :password %> </p>
-<%= f.text_field :password %><br/>
-<p><%=f.label :password %> </p>
+<%= f.password_field :password %><br/>
+<p><%=f.label :avatar %> </p>
 <%= f.file_field :avatar %>
+<p><%=f.label :age %> </p>
+<%= f.file_field :age %>
+<p><%=f.label :gender %> </p>
+ <%= f.select :gender,['male','female'] %>
+<p><%=f.label :country %> </p>
+<%= f.file_field :countre %>
+<p><%=f.label :city %> </p>
+<%= f.file_field :city %>
+<p><%=f.label :street %> </p>
+<%= f.file_field :street %>
+<p><%=f.label :phone %> </p>
+<%= f.file_field :phone %>
+
+
+
+
+
+
+
 
 <%= f.submit "save" %>
 <% end %>
