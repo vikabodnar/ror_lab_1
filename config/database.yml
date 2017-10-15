@@ -23,3 +23,10 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
+
+
+production:
+  <<: *default
+  database: postgresql-rectangular-97010
+  username: postgresql-rectangular-97010_production
+  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
