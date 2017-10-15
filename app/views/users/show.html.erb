@@ -1,0 +1,5 @@
+<h1><%= link_to "Index", root_path %></h1>
+Firstname : <%= @user.firstname %><br/>
+Lastname : <%= @user.lastname %>
+<%= link_to "Edit", edit_user_path %>
+<%= link_to "Exit", user_path(@user.id), method: :delete %>
